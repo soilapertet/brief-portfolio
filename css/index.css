@@ -1,0 +1,103 @@
+/**
+* Color Palette
+* https://coolors.co/f5b700-f9f7f3-59656f-00072d-1d1e2c
+* Mango - #f5b700
+* Baby powder - #f9f7f3
+* Black Coral - #59656f
+* Oxford Blue - #00072D
+* Raisin Black - #1d1e2c
+*/
+
+/******************************* UNIVERSAL INDICATORS ****************************************/
+:root {
+    --intro-bg: #00072D;
+    --projects-bg: #59656f;
+    --footer-colour: #1d1e2c;
+    --font-colour: #f9f7f3;
+    --border-colour: #f5b700;
+    --main-font: 'Montserrat', sans-serif;
+    --heading-font: Caveat, cursive;
+    --font-size: 16px;
+}
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+    font-size: var(--font-colour);
+}
+img {
+    width: 500px;
+    height: 300px;
+}
+.heading, .sub-heading {
+    text-align: center;
+}
+.sub-heading {
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    padding: 0; margin: 0;
+}
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    padding: 60px 0;
+    margin: 0 auto;
+}
+/********************************** INTRODUCTION SECTION *********************************************/
+header {
+    background-color: var(--intro-bg);
+    color: var(--font-colour);
+    padding: 20px;
+}
+.heading {
+    font-family: var(--heading-font);
+    font-weight: bold;
+    font-size: 80px;
+    padding: 0;
+    margin: 0;
+}
+.logo {
+    font-size: 2rem;
+}
+
+/********************************** PROJECTS SECTION *********************************************/
+.projects {
+    background-color: var(--projects-bg);
+    color: var(--font-colour)
+}
+.project {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    font-size: 17px;
+    color: var(--font-colour);
+    margin: 30px 0;
+    padding: 20px 0;
+    border-bottom: 3px dashed var(--border-colour);
+}
+.btn {
+    background-color: var(--intro-bg);
+    color: var(--border-colour);
+    padding: 10px;
+    border-radius: 15px;
+}
+.project a {
+    text-decoration: none;
+}
+
+/********************************** PROJECTS SECTION *********************************************/
+#contact-info {
+    background-color: var(--border-colour);
+    color: var(--footer-colour);
+}
+.email {
+    color: var(--font-colour);
+}
